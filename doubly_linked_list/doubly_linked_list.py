@@ -96,6 +96,7 @@ class DoublyLinkedList:
             # set the head and tail to this new node
             self.head = new_node
             self.tail = new_node
+            
         # otherwise
         else:
             # set the new nodes Prev to the current tail
@@ -104,6 +105,7 @@ class DoublyLinkedList:
             self.tail.next = new_node
             # set the tail ref to the new node
             self.tail = new_node
+            
 
     """Removes the List's current tail node, making the 
     current tail's previous node the new tail of the List.
