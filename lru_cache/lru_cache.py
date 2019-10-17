@@ -35,6 +35,7 @@ class LRUCache:
             self.order.move_to_end(node)
             # return the nodes value
             return node.value[1]
+            # the key is the [0], while [1] is the value
         # otherwise
         else:
             # return None
@@ -84,4 +85,4 @@ tom.set('item1', 'a')
 tom.set('item2', 'b')
 tom.set('item3', 'c')
 
-tom.get('item1')
+print(tom.get('item1'))
